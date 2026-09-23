@@ -58,7 +58,7 @@ Facial animation is computed per audio chunk from raw PCM alone — no phoneme t
 
 **Conversation state** (`Idle` / `Listening` / `Thinking` / `Speaking`) is a small FSM: `Speaking` is auto-detected from whether audio is actually playing and always wins over a manual override (forcing it away while the mouth is visibly moving would look broken); the other three states are driven either by a direct Blueprint call or a `{"type":"state",...}` message from the backend. Eye saccades are suppressed while `Speaking` and restored — not force-enabled — once it ends.
 
-Full property-by-property reference: [`Docs/README.md`](Docs/README.md).
+Full property-by-property reference: [`Docs/README.md`](Docs/README.pdf).
 
 ## Features
 
