@@ -1,0 +1,32 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.0",
+	"FriendlyName": "Digital Human Runtime SDK",
+	"Description": "Realtime WebSocket-driven audio streaming, lip sync, and behaviour runtime for MetaHuman digital humans. Backend-agnostic: connects to an existing AI backend and drives audio, facial animation, and body behaviour in realtime.",
+	"Category": "Animation",
+	"CreatedBy": "Parth Sarwade",
+	"CreatedByURL": "https://github.com/Magma-wyrm",
+	"DocsURL": "https://github.com/Magma-wyrm/DigitalHumanRuntimeSDK/blob/main/Docs/README.md",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/Magma-wyrm/DigitalHumanRuntimeSDK/issues",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EngineVersion": "5.6.0",
+	"Modules": [
+		{
+			"Name": "DigitalHumanRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64" ]
+		},
+		{
+			"Name": "DigitalHumanEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64" ]
+		}
+	]
+}

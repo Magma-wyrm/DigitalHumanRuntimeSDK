@@ -1,0 +1,19 @@
+# UE build/cache artifacts — regenerated locally, never versioned
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+*.VC.db
+*.opensdf
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+.vs/
+.vscode/
+*.opendb
+
+# OS cruft
+.DS_Store
+Thumbs.db
