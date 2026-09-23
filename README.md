@@ -66,25 +66,25 @@ Full property-by-property reference: [`Docs/README.md`](Docs/README.pdf).
 - **Every DSP gain, threshold, and idle-animation timing is an `EditAnywhere` property** — tune mouth gains, plosive thresholds, blink intervals, and head-movement amplitude from the Details panel, no recompile needed.
 - **Independent, always-on idle behaviour** — blinking, breathing, eye saccades, and Perlin-noise head drift that keep running with zero backend connection, layered underneath the audio-driven curves.
 - **Resilient WebSocket transport** — exponential backoff reconnect (1s → 30s ceiling), optional heartbeat, and JSON/binary frames routed to the right component by the subsystem so a stray status message can never land in the audio path.
-- **Backend-agnostic protocol** — any backend that can speak the small JSON/binary protocol in [`Docs/README.md`](Docs/README.md) can drive this plugin. No coupling to a specific STT/LLM/TTS stack.
+- **Backend-agnostic protocol** — any backend that can speak the small JSON/binary protocol in [`Docs/README.md`](Docs/README.pdf) can drive this plugin. No coupling to a specific STT/LLM/TTS stack.
 
 ## Requirements
 
 - Unreal Engine 5.6
 - Win64 (see `PlatformAllowList` in `DigitalHumanRuntimeSDK.uplugin` — porting to other platforms is untested but should be straightforward, the plugin has no Windows-specific code)
 - A MetaHuman character in your project (not included — bring your own via Fab/MetaHuman Creator)
-- A backend that speaks the WebSocket protocol documented in [`Docs/README.md`](Docs/README.md)
+- A backend that speaks the WebSocket protocol documented in [`Docs/README.md`](Docs/README.pdf)
 
 ## Installation
 
 1. Copy this repository into your project's `Plugins/DigitalHumanRuntimeSDK/` folder.
 2. Regenerate project files and build, or launch the `.uproject` and let Unreal prompt you to rebuild.
 3. Enable **Digital Human Runtime SDK** in Edit → Plugins (Animation category).
-4. Add the components to your MetaHuman Actor and point `UDigitalHumanSubsystem::Connect()` at your backend's WebSocket URL — see [`Docs/README.md`](Docs/README.md) for the full component and AnimBP wiring walkthrough.
+4. Add the components to your MetaHuman Actor and point `UDigitalHumanSubsystem::Connect()` at your backend's WebSocket URL — see [`Docs/README.pdf`](Docs/README.pdf) for the full component and AnimBP wiring walkthrough.
 
 ## Documentation
 
-[`Docs/README.md`](Docs/README.md) — full component reference (every property and event), the WebSocket protocol spec, the AnimBP wiring guide, a tuning-parameter table, and troubleshooting.
+[`Docs/README.pdf`](Docs/README.pdf) — full component reference (every property and event), the WebSocket protocol spec, the AnimBP wiring guide, a tuning-parameter table, and troubleshooting.
 
 ## Known limitations
 
